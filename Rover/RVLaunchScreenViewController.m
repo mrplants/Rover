@@ -99,7 +99,8 @@
                                                                selector:@selector(nextMontageImage)
                                                                userInfo:nil
                                                                 repeats:NO];
-            self.launchMontageImageView.image = [UIImage imageNamed:self.montageImageNames[self.imageIndex]];
+            self.launchMontageImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.montageImageNames[self.imageIndex]
+                                                                                                                 ofType:@"png"]];
             break;
         case 12:
         case 13:
@@ -109,7 +110,8 @@
                                                                userInfo:nil
                                                                 repeats:NO];
 
-            self.launchMontageImageView.image = [UIImage imageNamed:self.montageImageNames[self.imageIndex]];
+            self.launchMontageImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.montageImageNames[self.imageIndex]
+                                                                                                                 ofType:@"png"]];
             break;
         case 14:
             self.montageTimer = [NSTimer scheduledTimerWithTimeInterval:.01
@@ -117,7 +119,8 @@
                                                                selector:@selector(nextMontageImage)
                                                                userInfo:nil
                                                                 repeats:NO];
-            self.launchMontageImageView.image = [UIImage imageNamed:self.montageImageNames[self.imageIndex]];
+            self.launchMontageImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.montageImageNames[self.imageIndex]
+                                                                                                                 ofType:@"png"]];
             break;
         case 15:
             [self departView];

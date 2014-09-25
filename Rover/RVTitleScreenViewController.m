@@ -34,9 +34,9 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.startButton setImage:[UIImage imageNamed:RV_IMAGES_TITLE_SCREEN_START_BUTTON_UP]
+    [self.startButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_TITLE_SCREEN_START_BUTTON_UP ofType:@"png"]]
                       forState:UIControlStateNormal];
-    [self.startButton setImage:[UIImage imageNamed:RV_IMAGES_TITLE_SCREEN_START_BUTTON_DOWN]
+    [self.startButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_TITLE_SCREEN_START_BUTTON_DOWN ofType:@"png"]]
                       forState:UIControlStateHighlighted];
     self.introAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[RVAudioReference titleScreenIntro] error:nil];
     [self.introAudioPlayer prepareToPlay];
@@ -48,7 +48,7 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 
-    self.backgroundImageView.image = [UIImage imageNamed:RV_IMAGES_TITLE_SCREEN_BACKGROUND];
+    self.backgroundImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"backgroundTitleScreen@2x" ofType:@"png"]];
     
     CGRect startFrame = rectQuarter((CGRect)RV_LAYOUT_TITLE_SCREEN_START_BUTTON);
     self.startButtonTopConstraint.constant = startFrame.origin.y;
@@ -77,10 +77,6 @@
 - (IBAction)startButtonTapped:(UIButton *)sender {
     [self performSegueWithIdentifier:RV_SEGUE_TITLE_SCREEN_TO_PLANET_SELECT_SCREEN
                               sender:self];
-}
-
-- (IBAction)unwindToTitleScreen:(UIStoryboardSegue *)unwindSegue
-{
 }
 
 @end

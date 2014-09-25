@@ -10,7 +10,7 @@
 	<string>Rover</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>01C0B1738AE5AF2DB570C0C451435C8DF7BC604F</key>
+		<key>61E4901776B6D2223788F34A68D055553289A275</key>
 		<string>https://github.com/mrplants/RoverCommand</string>
 		<key>B8D38BB8-546C-4745-8DF0-D846B6DB046C</key>
 		<string>https://github.com/mrplants/RoverCommand</string>
@@ -19,7 +19,7 @@
 	<string>Rover.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>01C0B1738AE5AF2DB570C0C451435C8DF7BC604F</key>
+		<key>61E4901776B6D2223788F34A68D055553289A275</key>
 		<string>../..</string>
 		<key>B8D38BB8-546C-4745-8DF0-D846B6DB046C</key>
 		<string>../../../RoverCommand</string>
@@ -29,7 +29,7 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>01C0B1738AE5AF2DB570C0C451435C8DF7BC604F</string>
+	<string>61E4901776B6D2223788F34A68D055553289A275</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>01C0B1738AE5AF2DB570C0C451435C8DF7BC604F</string>
+			<string>61E4901776B6D2223788F34A68D055553289A275</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RoverCommand%20-%20IB%20Edits</string>
 		</dict>

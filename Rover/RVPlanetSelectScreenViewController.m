@@ -78,14 +78,18 @@
     [super viewDidLoad];
     
     //set images
-    [self.exitButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON] forState:UIControlStateNormal];
-    [self.exitButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON_DOWN] forState:UIControlStateHighlighted];
-    [self.letsGoButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON] forState:UIControlStateNormal];
-    [self.letsGoButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_DOWN] forState:UIControlStateHighlighted];
-    self.moonGlowImageView.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_MOON_GLOW];
-    self.marsGlowImageView.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_MARS_GLOW];
-    self.titanGlowImageView.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_TITAN_GLOW];
-    self.plutoGlowImageView.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_PLUTO_GLOW];
+    [self.exitButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON ofType:@"png"]]
+                     forState:UIControlStateNormal];
+    [self.exitButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON_DOWN ofType:@"png"]]
+                     forState:UIControlStateHighlighted];
+    [self.letsGoButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON ofType:@"png"]]
+                       forState:UIControlStateNormal];
+    [self.letsGoButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_DOWN ofType:@"png"]]
+                       forState:UIControlStateHighlighted];
+    self.moonGlowImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_MOON_GLOW ofType:@"png"]];
+    self.marsGlowImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_MARS_GLOW ofType:@"png"]];
+    self.titanGlowImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_TITAN_GLOW ofType:@"png"]];
+    self.plutoGlowImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_PLUTO_GLOW ofType:@"png"]];
     
     //set up the planet glow rotations
     self.planetGlows = @[self.moonGlowImageView, self.marsGlowImageView, self.titanGlowImageView, self.plutoGlowImageView];
@@ -157,6 +161,15 @@
 {
     [super viewDidDisappear:animated];
     self.backgroundImageView.image = nil;
+    [self.exitButton setImage:nil forState:UIControlStateNormal];
+    [self.exitButton setImage:nil forState:UIControlStateHighlighted];
+    [self.letsGoButton setImage:nil forState:UIControlStateNormal];
+    [self.letsGoButton setImage:nil forState:UIControlStateHighlighted];
+    self.moonGlowImageView.image = nil;
+    self.marsGlowImageView.image = nil;
+    self.titanGlowImageView.image = nil;
+    self.plutoGlowImageView.image = nil;
+
     [self.indiaTextView.typingAudioPlayer stop];
     [self.indiaTextView.underscoreTimer invalidate];
     [self.indiaTextView.typeTimer invalidate];

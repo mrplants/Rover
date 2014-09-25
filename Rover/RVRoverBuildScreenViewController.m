@@ -114,20 +114,30 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.toolTypeButtonAnalysisUpImage = [UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_ANALYSIS_UP];
-    self.toolTypeButtonCommunicationUpImage = [UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_COMMUNICATION_UP];
-    self.toolTypeButtonTransportationUpImage = [UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_TRANSPORTATION_UP];
-    self.communicationCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
-    self.analysisCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
-    self.locomotionCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
-    self.launchRoverCheckGlow.image = [UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW];
+    self.toolTypeButtonAnalysisUpImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_ANALYSIS_UP
+                                                                                                          ofType:@"png"]];
+    self.toolTypeButtonCommunicationUpImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_COMMUNICATION_UP
+                                                                                                               ofType:@"png"]];
+    self.toolTypeButtonTransportationUpImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_TRANSPORTATION_UP
+                                                                                                                ofType:@"png"]];
+    self.communicationCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW
+                                                                                                     ofType:@"png"]];
+    self.analysisCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
+                                                                                                ofType:@"png"]];
+    self.locomotionCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
+                                                                                                  ofType:@"png"]];
+    self.launchRoverCheckGlow.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
+                                                                                                       ofType:@"png"]];
     self.communicationCheck.hidden = self.locomotionCheck.hidden = self.analysisCheck.hidden = self.launchRoverCheckGlow.hidden = YES;
 
-    [self.exitButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON] forState:UIControlStateNormal];
-    [self.exitButton setImage:[UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON_DOWN] forState:UIControlStateHighlighted];
-
-    [self.launchRoverButton setImage:[UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON] forState:UIControlStateNormal];
-    [self.launchRoverButton setImage:[UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_DOWN] forState:UIControlStateHighlighted];
+    [self.exitButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON
+                                                                                               ofType:@"png"]] forState:UIControlStateNormal];
+    [self.exitButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_EXIT_BUTTON_DOWN
+                                                                                               ofType:@"png"]] forState:UIControlStateHighlighted];
+    [self.launchRoverButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON
+                                                                                                      ofType:@"png"]] forState:UIControlStateNormal];
+    [self.launchRoverButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_DOWN
+                                                                                                      ofType:@"png"]] forState:UIControlStateHighlighted];
 
     [self layoutCustomConstraints];
     self.launchRoverCheckGlow.hidden = YES;
@@ -138,7 +148,8 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.backgroundImageView.image = [UIImage imageNamed:RV_IMAGES_ROVER_BUILD_SCREEN_BACKGROUND];
+    self.backgroundImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_BACKGROUND
+                                                                                                      ofType:@"png"]];
     [self communicationButtonDown:nil];
 //    self.communicationToolChest.hidden = NO;
 //    self.locomotionToolChest.hidden = NO;
@@ -167,6 +178,20 @@
 {
     [super viewDidDisappear:animated];
     self.backgroundImageView.image = nil;
+    self.toolTypeButtonAnalysisUpImage = nil;
+    self.toolTypeButtonCommunicationUpImage = nil;
+    self.toolTypeButtonTransportationUpImage = nil;
+    self.communicationCheck.image = nil;
+    self.analysisCheck.image = nil;
+    self.locomotionCheck.image = nil;
+    self.launchRoverCheckGlow.image = nil;
+    [self.exitButton setImage:nil forState:UIControlStateNormal];
+    [self.exitButton setImage:nil forState:UIControlStateHighlighted];
+    [self.launchRoverButton setImage:nil forState:UIControlStateNormal];
+    [self.launchRoverButton setImage:nil forState:UIControlStateHighlighted];
+    self.communicationToolChest = nil;
+    self.analyticsToolChest = nil;
+    self.locomotionToolChest = nil;
     [self.ambientAudioPlayer stop];
     self.communicationToolChest.hidden = YES;
     self.locomotionToolChest.hidden = YES;
