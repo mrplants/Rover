@@ -5,7 +5,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "portrait.png",
+      "filename" : "splash screen-1.png",
       "scale" : "1x"
     },
     {
@@ -13,7 +13,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "iOS Simulator Screen shot May 19, 2014, 7.19.36 PM.png",
+      "filename" : "splash screen.png",
       "scale" : "1x"
     },
     {
@@ -21,7 +21,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "portrait_big.png",
+      "filename" : "splash screen@2x-1.png",
       "scale" : "2x"
     },
     {
@@ -29,7 +29,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "iOS Simulator Screen shot May 19, 2014, 7.20.22 PM-1.png",
+      "filename" : "splash screen@2x.png",
       "scale" : "2x"
     }
   ],

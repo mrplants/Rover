@@ -36,9 +36,9 @@
 
 #define RV_IMAGES_ROVER_BUILD_SCREEN_BACKGROUND (@"backgroundRoverBuildScreen.png")
 #define RV_IMAGES_ROVER_BUILD_SCREEN_SCROLLBAR (@"scrollBarNubs.png")
-#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_ANALYSIS_UP (@"toolButtonsAnalysisButtonDown.png")
-#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_TRANSPORTATION_UP (@"toolButtonsLocomotionButtonDown.png")
-#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_COMMUNICATION_UP (@"toolButtonsComunicationButtonDown.png")
+#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_ANALYSIS_UP (@"toolButtonsAnalysisButtonDown_replacement.png")
+#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_TRANSPORTATION_UP (@"toolButtonsLocomotionButtonDown_replacement.png")
+#define RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_COMMUNICATION_UP (@"toolButtonsCommunicationButtonDown_replacement.png")
 #define RV_IMAGES_ROVER_BUILD_SCREEN_COMMUNICATION_TOOLS_SHADOWS (@"CommunicationToolShadows.png")
 #define RV_IMAGES_ROVER_BUILD_SCREEN_COMMUNICATION_TOOLS_PANCAM (@"panCam.png")
 #define RV_IMAGES_ROVER_BUILD_SCREEN_COMMUNICATION_TOOLS_LGANTENNA (@"lowGainAntenna.png")
