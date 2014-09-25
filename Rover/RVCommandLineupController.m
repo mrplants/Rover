@@ -33,7 +33,7 @@
         self.errorAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[RVAudioReference error] error:nil];
         [self.errorAudioPlayer prepareToPlay];
     }
-    return self;
+    return self; 
 }
 
 //all the commands return a BOOL that describes whether or not they can complete the action
