@@ -321,6 +321,14 @@
 		14D6BD5A193481A600D188F3 /* sJacob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D6BD56193481A600D188F3 /* sJacob@2x.png */; };
 		14E5417D1904533300061140 /* RVCommandLineupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E5417C1904533300061140 /* RVCommandLineupViewCell.m */; };
 		14E54180190516B700061140 /* RVCommandLineupViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E5417F190516B700061140 /* RVCommandLineupViewTwo.m */; };
+		14F558CE19DD3DB700722031 /* toolButtonsAnalysisButtonDown_replacement2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558CB19DD3DB700722031 /* toolButtonsAnalysisButtonDown_replacement2@2x.png */; };
+		14F558CF19DD3DB700722031 /* toolButtonsCommunicationButtonDown_replacement2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558CC19DD3DB700722031 /* toolButtonsCommunicationButtonDown_replacement2@2x.png */; };
+		14F558D019DD3DB700722031 /* toolButtonsLocomotionButtonDown_replacement2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558CD19DD3DB700722031 /* toolButtonsLocomotionButtonDown_replacement2@2x.png */; };
+		14F558D319DD427400722031 /* continueButton_kludgeGone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558D119DD427400722031 /* continueButton_kludgeGone@2x.png */; };
+		14F558D419DD427400722031 /* continueButtonDown_kludgeGone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558D219DD427400722031 /* continueButtonDown_kludgeGone@2x.png */; };
+		14F558D819DD480B00722031 /* continueButton_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558D519DD480B00722031 /* continueButton_background@2x.png */; };
+		14F558D919DD480B00722031 /* continueButton_noback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558D619DD480B00722031 /* continueButton_noback@2x.png */; };
+		14F558DA19DD480B00722031 /* continueButtonDown_noback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F558D719DD480B00722031 /* continueButtonDown_noback@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -695,6 +703,14 @@
 		14E5417C1904533300061140 /* RVCommandLineupViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVCommandLineupViewCell.m; sourceTree = "<group>"; };
 		14E5417E190516B700061140 /* RVCommandLineupViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RVCommandLineupViewTwo.h; path = ../RVCommandLineupViewTwo.h; sourceTree = "<group>"; };
 		14E5417F190516B700061140 /* RVCommandLineupViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RVCommandLineupViewTwo.m; path = ../RVCommandLineupViewTwo.m; sourceTree = "<group>"; };
+		14F558CB19DD3DB700722031 /* toolButtonsAnalysisButtonDown_replacement2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolButtonsAnalysisButtonDown_replacement2@2x.png"; sourceTree = "<group>"; };
+		14F558CC19DD3DB700722031 /* toolButtonsCommunicationButtonDown_replacement2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolButtonsCommunicationButtonDown_replacement2@2x.png"; sourceTree = "<group>"; };
+		14F558CD19DD3DB700722031 /* toolButtonsLocomotionButtonDown_replacement2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolButtonsLocomotionButtonDown_replacement2@2x.png"; sourceTree = "<group>"; };
+		14F558D119DD427400722031 /* continueButton_kludgeGone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continueButton_kludgeGone@2x.png"; sourceTree = "<group>"; };
+		14F558D219DD427400722031 /* continueButtonDown_kludgeGone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continueButtonDown_kludgeGone@2x.png"; sourceTree = "<group>"; };
+		14F558D519DD480B00722031 /* continueButton_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continueButton_background@2x.png"; sourceTree = "<group>"; };
+		14F558D619DD480B00722031 /* continueButton_noback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continueButton_noback@2x.png"; sourceTree = "<group>"; };
+		14F558D719DD480B00722031 /* continueButtonDown_noback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continueButtonDown_noback@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1306,6 +1322,9 @@
 		14D6BBE51930C11500D188F3 /* RoverBuildScreen */ = {
 			isa = PBXGroup;
 			children = (
+				14F558CB19DD3DB700722031 /* toolButtonsAnalysisButtonDown_replacement2@2x.png */,
+				14F558CC19DD3DB700722031 /* toolButtonsCommunicationButtonDown_replacement2@2x.png */,
+				14F558CD19DD3DB700722031 /* toolButtonsLocomotionButtonDown_replacement2@2x.png */,
 				1475D43B19D3DF3300B10F67 /* toolButtonsAnalysisButtonDown_replacement@2x.png */,
 				1475D43C19D3DF3300B10F67 /* toolButtonsCommunicationButtonDown_replacement@2x.png */,
 				1475D43D19D3DF3300B10F67 /* toolButtonsLocomotionButtonDown_replacement@2x.png */,
@@ -1380,6 +1399,11 @@
 		14D6BC081930C11500D188F3 /* VictoryScreen */ = {
 			isa = PBXGroup;
 			children = (
+				14F558D519DD480B00722031 /* continueButton_background@2x.png */,
+				14F558D619DD480B00722031 /* continueButton_noback@2x.png */,
+				14F558D719DD480B00722031 /* continueButtonDown_noback@2x.png */,
+				14F558D119DD427400722031 /* continueButton_kludgeGone@2x.png */,
+				14F558D219DD427400722031 /* continueButtonDown_kludgeGone@2x.png */,
 				14D6BD53193481A600D188F3 /* fIndia@2x.png */,
 				14D6BD54193481A600D188F3 /* fJacob@2x.png */,
 				14D6BD55193481A600D188F3 /* sIndia@2x.png */,
@@ -1577,6 +1601,7 @@
 				14D6BCF21934718B00D188F3 /* compassRoseObjective2@2x.png in Resources */,
 				14131984192B4E2100C4376E /* sfx_clickwheel-2.wav in Resources */,
 				14D6BCAF1930C11500D188F3 /* moonThermometer8@2x.png in Resources */,
+				14F558CE19DD3DB700722031 /* toolButtonsAnalysisButtonDown_replacement2@2x.png in Resources */,
 				141319A0192B4E2100C4376E /* sfx_wheels-and-treads_start.wav in Resources */,
 				14D6BCFE193471A000D188F3 /* battery4@2x.png in Resources */,
 				14D6BC7F1930C11500D188F3 /* backgroundBackgroundRoverBuildScreen@2x.png in Resources */,
@@ -1586,9 +1611,11 @@
 				14D6BCB01930C11500D188F3 /* moonThermometer9@2x.png in Resources */,
 				14D6BC441930C11500D188F3 /* undoButtonDown@2x.png in Resources */,
 				14D6BC8C1930C11500D188F3 /* microscope@2x.png in Resources */,
+				14F558D819DD480B00722031 /* continueButton_background@2x.png in Resources */,
 				14D6BCF41934718B00D188F3 /* compassRoseSmallCircle@2x.png in Resources */,
 				14131995192B4E2100C4376E /* vox_parachute-deploy.wav in Resources */,
 				14D6BC751930C11500D188F3 /* buildRoverButtonDown@2x.png in Resources */,
+				14F558D319DD427400722031 /* continueButton_kludgeGone@2x.png in Resources */,
 				14D6BD371934770300D188F3 /* mapPathAround@2x.png in Resources */,
 				14D6BC811930C11500D188F3 /* CommunicationToolShadows@2x.png in Resources */,
 				1413199D192B4E2100C4376E /* sfx_robot-arm.wav in Resources */,
@@ -1617,6 +1644,7 @@
 				14D6BCFB193471A000D188F3 /* battery1Red@2x.png in Resources */,
 				14D6BCAB1930C11500D188F3 /* moonThermometer4@2x.png in Resources */,
 				14D6BCB21930C11500D188F3 /* objective2Pluto@2x.png in Resources */,
+				14F558D019DD3DB700722031 /* toolButtonsLocomotionButtonDown_replacement2@2x.png in Resources */,
 				14D6BCBD1930C11500D188F3 /* tryAgainButton@2x.png in Resources */,
 				14D6BC891930C11500D188F3 /* highGainAntenna@2x.png in Resources */,
 				14D6BD081934746800D188F3 /* launchSequence4@2x.png in Resources */,
@@ -1624,6 +1652,7 @@
 				14D6BC971930C11500D188F3 /* tutorial4@2x.png in Resources */,
 				14D6BC421930C11500D188F3 /* turnRightButtonDown@2x.png in Resources */,
 				14D6BCF01934718B00D188F3 /* compassRoseLargeCircle@2x.png in Resources */,
+				14F558D919DD480B00722031 /* continueButton_noback@2x.png in Resources */,
 				14D6BC581930C11500D188F3 /* launchSequence14Pluto@2x.png in Resources */,
 				14D6BCD31930D17B00D188F3 /* hovercraft@2x.png in Resources */,
 				141319A3192B4E2100C4376E /* sfx_failure_wopwop.wav in Resources */,
@@ -1647,6 +1676,7 @@
 				14D6BC481930C11500D188F3 /* launchSequence10Pluto@2x.png in Resources */,
 				14D6BD59193481A600D188F3 /* sIndia@2x.png in Resources */,
 				14131981192B4E2100C4376E /* _DS_Store in Resources */,
+				14F558CF19DD3DB700722031 /* toolButtonsCommunicationButtonDown_replacement2@2x.png in Resources */,
 				14D6BC881930C11500D188F3 /* chemCam@2x.png in Resources */,
 				14D6BC6A1930C11500D188F3 /* launchSequence8Mars@2x.png in Resources */,
 				14D6BCB41930C11500D188F3 /* objectiveMars1@2x.png in Resources */,
@@ -1720,6 +1750,7 @@
 				14D6BC571930C11500D188F3 /* launchSequence14Moon@2x.png in Resources */,
 				14D6BC371930C11500D188F3 /* moveForwardButton@2x.png in Resources */,
 				14D6BC511930C11500D188F3 /* launchSequence12Titan@2x.png in Resources */,
+				14F558DA19DD480B00722031 /* continueButtonDown_noback@2x.png in Resources */,
 				14D6BD1E1934751000D188F3 /* receivingSignal@2x.png in Resources */,
 				141319A8192B4E2100C4376E /* sfx_titan_laser-drill.wav in Resources */,
 				14D6BC4F1930C11500D188F3 /* launchSequence12Moon@2x.png in Resources */,
@@ -1739,6 +1770,7 @@
 				14131982192B4E2100C4376E /* amb_workshop.wav in Resources */,
 				14B7CA151913AF1800608CB6 /* titan.csv in Resources */,
 				14D6BC4C1930C11500D188F3 /* launchSequence11Pluto@2x.png in Resources */,
+				14F558D419DD427400722031 /* continueButtonDown_kludgeGone@2x.png in Resources */,
 				141318F9192B1A4700C4376E /* AppIcon152.jpg in Resources */,
 				14D6BCFD193471A000D188F3 /* battery3@2x.png in Resources */,
 				14D6BC7C1930C11500D188F3 /* titanDescription@2x.png in Resources */,

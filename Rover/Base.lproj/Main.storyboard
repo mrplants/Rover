@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="HmN-wY-0Op">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="HmN-wY-0Op">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Title Screen View Controller-->
@@ -510,7 +510,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4nk-pm-aZg">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FailureIndia.png" translatesAutoresizingMaskIntoConstraints="NO" id="fxL-fI-Dc4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sJacob.png" translatesAutoresizingMaskIntoConstraints="NO" id="fxL-fI-Dc4">
                                 <rect key="frame" x="102" y="309" width="274" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="366" id="DWb-7l-Qio"/>
@@ -1037,7 +1037,7 @@
                                     <constraint firstAttribute="width" constant="37" id="iLg-iA-seg"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locomotionCheckShadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-GA-s9X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-GA-s9X">
                                 <rect key="frame" x="750" y="670" width="36" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="ZTu-yn-y4K"/>
@@ -1214,7 +1214,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FailureIndia.png" width="241" height="307"/>
         <image name="analyzeButton.png" width="165" height="165"/>
         <image name="backgroundBackgroundRoverBuildScreen.png" width="1024" height="768"/>
         <image name="backgroundCommandLineup.png" width="246" height="329"/>
@@ -1227,13 +1226,13 @@
         <image name="continueButton.png" width="235" height="116"/>
         <image name="exitButton.png" width="79" height="80"/>
         <image name="launchRoverButton.png" width="277" height="134"/>
-        <image name="locomotionCheckShadow.png" width="73" height="63"/>
         <image name="marsGlow.png" width="150" height="150"/>
         <image name="moonGlow.png" width="86" height="86"/>
         <image name="moonThermometer11.png" width="45" height="119"/>
         <image name="moveForwardButton.png" width="124" height="87"/>
         <image name="plutoGlow.png" width="82" height="81"/>
         <image name="robotArmButton.png" width="216" height="141"/>
+        <image name="sJacob.png" width="241" height="307"/>
         <image name="sendCommandButton.png" width="258" height="128"/>
         <image name="startButton.png" width="226" height="107"/>
         <image name="titanGlow.png" width="123" height="123"/>
@@ -1250,9 +1249,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination">
-            <size key="portraitSize" width="768" height="1024"/>
-            <size key="landscapeSize" width="1024" height="768"/>
-        </simulatedScreenMetrics>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

@@ -120,12 +120,9 @@
                                                                                                                ofType:@"png"]];
     self.toolTypeButtonTransportationUpImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_TOOL_TYPE_BUTTONS_TRANSPORTATION_UP
                                                                                                                 ofType:@"png"]];
-    self.communicationCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW
-                                                                                                     ofType:@"png"]];
-    self.analysisCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
-                                                                                                ofType:@"png"]];
-    self.locomotionCheck.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
-                                                                                                  ofType:@"png"]];
+    self.communicationCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
+    self.analysisCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
+    self.locomotionCheck.image = [UIImage imageNamed:RV_IMAGES_PLANET_SELECT_SCREEN_LETS_GO_BUTTON_GLOW];
     self.launchRoverCheckGlow.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:RV_IMAGES_ROVER_BUILD_SCREEN_LAUNCH_ROVER_BUTTON_GLOW
                                                                                                        ofType:@"png"]];
     self.communicationCheck.hidden = self.locomotionCheck.hidden = self.analysisCheck.hidden = self.launchRoverCheckGlow.hidden = YES;
@@ -168,6 +165,9 @@
     [super viewWillDisappear:animated];
     self.guidanceTextView.sendAlert = NO;
     [self.roverController.messageTimer invalidate];
+    [self.guidanceTextView.typingAudioPlayer stop];
+    [self.guidanceTextView.underscoreTimer invalidate];
+    [self.guidanceTextView.typeTimer invalidate];
     [self.guidanceTextView.typingAudioPlayer stop];
     self.communicationToolChest.hidden = YES;
     self.locomotionToolChest.hidden = YES;

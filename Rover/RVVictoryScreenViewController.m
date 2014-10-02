@@ -90,8 +90,6 @@
     } else if ([self.gameData[@"reason"] isEqualToString:@"first"]) {
         if ([self.gameData[@"guide"] isEqualToString:@"Jacob"]) {
             self.guideImageView.image = [UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_JACOB_SUCCESS];
-            UIImage *image = [UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_JACOB_SUCCESS];
-            NSString *name = [RV_IMAGES_VICTORY_SCREEN_JACOB_SUCCESS copy];
         } else if ([self.gameData[@"guide"] isEqualToString:@"India"]) {
             self.guideImageView.image = [UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_INDIA_SUCCESS];
         }
@@ -117,9 +115,11 @@
                                                          [UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_MARS_OBJECTIVE_4]];
             self.backgroundBackgroundImageView.image = self.backgroundImageView.animationImages[0];
         }
-        self.buttonBackground.hidden = YES;
+        self.buttonBackground.hidden = NO;
         self.endGameButton.hidden = YES;
         self.gameFailButton.hidden = YES;
+        self.buttonBackground.image = [UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_CONTINUE_BUTTON_BACKGROUND];
+        [self.buttonBackgroundConstraints setLayoutRect:rectQuarter((CGRect)RV_LAYOUT_VICTORY_SCREEN_CONTINUE_BUTTON_BACKGROUND)];
         [self.continueButtonConstraints setLayoutRect:rectQuarter((CGRect)RV_LAYOUT_VICTORY_SCREEN_CONTINUE_BUTTON)];
         [self.continueButton setImage:[UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_CONTINUE_BUTTON] forState:UIControlStateNormal];
         [self.continueButton setImage:[UIImage imageNamed:RV_IMAGES_VICTORY_SCREEN_CONTINUE_BUTTON_DOWN] forState:UIControlStateHighlighted];

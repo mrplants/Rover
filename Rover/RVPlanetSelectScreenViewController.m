@@ -157,6 +157,15 @@
     [self.ambientAudioPlayer play];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.indiaTextView.typingAudioPlayer stop];
+    [self.indiaTextView.underscoreTimer invalidate];
+    [self.indiaTextView.typeTimer invalidate];
+    [self.indiaTextView.typingAudioPlayer stop];
+}
+
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
@@ -170,9 +179,6 @@
     self.titanGlowImageView.image = nil;
     self.plutoGlowImageView.image = nil;
 
-    [self.indiaTextView.typingAudioPlayer stop];
-    [self.indiaTextView.underscoreTimer invalidate];
-    [self.indiaTextView.typeTimer invalidate];
     [self.ambientAudioPlayer stop];
 }
 
