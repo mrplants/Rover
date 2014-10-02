@@ -45,7 +45,7 @@
             self.state = RV_INDIA_GUIDEANCE_STATE_INTRODUCTION_3;
         } else if ([self.state isEqualToString:RV_INDIA_GUIDEANCE_STATE_INTRODUCTION_3]) {
             [self.delegate writeMessage:@"Ready to start? Touch a celestial body to see its mission!"];
-            self.state = RV_INDIA_GUIDEANCE_STATE_INTRODUCTION_0;
+            self.state = @"NO STATE"; //RV_INDIA_GUIDEANCE_STATE_INTRODUCTION_0;
         }
     } else {
         if ([self.selectedPlanet isEqualToString:@"moon"]) {

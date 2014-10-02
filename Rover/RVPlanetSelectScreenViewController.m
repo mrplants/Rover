@@ -23,6 +23,7 @@
 @interface RVPlanetSelectScreenViewController () <RVAnimatedTextDelegate, UIAlertViewDelegate, RVIndiaGuidanceDelegate>
 
 @property (nonatomic, strong) AVAudioPlayer * ambientAudioPlayer;
+@property (nonatomic, strong) NSTimer *guidanceMessageTimer;
 
 //layout properties
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *moonButtonConstraints;
@@ -273,6 +274,7 @@
 //RVIndiaGuidanceSystemDelegate Methods
 -(void)writeMessage:(NSString *)message
 {
+    [self.guidanceMessageTimer invalidate];
     self.indiaTextView.animatedText = message;
 }
 
@@ -285,11 +287,12 @@
 -(void)textViewDidFinishedAnimating:(RVAnimatedTextView *)textView
 {
     //wait two seconds so that the user can read the text
-    [[NSRunLoop currentRunLoop] addTimer:[NSTimer scheduledTimerWithTimeInterval:2.0
-                                     target:self.guidanceSystem
-                                   selector:@selector(nextMessage)
-                                   userInfo:nil
-                                    repeats:NO]
+    self.guidanceMessageTimer = [NSTimer scheduledTimerWithTimeInterval:2.0
+                                                                 target:self.guidanceSystem
+                                                               selector:@selector(nextMessage)
+                                                               userInfo:nil
+                                                                repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:self.guidanceMessageTimer
                                  forMode:NSRunLoopCommonModes];
 }
 
